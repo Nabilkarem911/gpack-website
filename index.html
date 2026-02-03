@@ -47,7 +47,7 @@
         .btn-cta { display: inline-block; background-color: var(--accent-color); color: var(--primary-color); padding: 15px 40px; font-size: 1.2rem; font-weight: 700; border-radius: 50px; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4); }
         .btn-cta:hover { transform: translateY(-3px); background-color: #ffed4a; }
 
-        /* --- الشركاء (التعديل الجديد) --- */
+        /* --- الشركاء --- */
         .partners-section { background: var(--white); padding: 60px 20px; text-align: center; border-bottom: 1px solid #eee; }
         .partners-title { color: #666; font-size: 1.2rem; margin-bottom: 40px; font-weight: 700; }
         
@@ -75,9 +75,7 @@
             transition: all 0.4s ease;
             cursor: pointer;
         }
-        .partners-grid-more img:hover {
-            transform: scale(1.15);
-        }
+        .partners-grid-more img:hover { transform: scale(1.15); }
 
         /* باقي الأقسام */
         .section-padding { padding: 80px 20px; }
@@ -109,10 +107,19 @@
         .product-desc { font-size: 0.95rem; color: #666; margin-bottom: 20px; flex-grow: 1; }
         .btn-order { display: block; width: 100%; text-align: center; padding: 12px; background: transparent; color: var(--primary-color); border: 2px solid var(--primary-color); border-radius: 10px; font-weight: 700; transition: all 0.3s; }
         .btn-order:hover { background: var(--primary-color); color: var(--white); }
+        
+        /* تنسيق التقييمات الجديد */
         .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto; }
         .testimonial-card { background: var(--light-bg); padding: 30px; border-radius: 15px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.05); border: 1px solid #eee; }
-        .client-img { width: 80px; height: 80px; border-radius: 50%; background: #ddd; margin: 0 auto 15px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: var(--primary-color); }
+        /* تعديل صورة العميل لتكون اللوجو */
+        .client-img { 
+            width: 80px; height: 80px; margin: 0 auto 15px; 
+            display: flex; align-items: center; justify-content: center;
+            background: transparent;
+        }
+        .client-img img { width: 100%; height: 100%; object-fit: contain; }
         .stars { color: #f1c40f; margin-bottom: 15px; }
+
         .faq-container { max-width: 800px; margin: 0 auto; }
         .faq-item { margin-bottom: 15px; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.05); background: #fff;}
         .faq-item summary { padding: 20px; cursor: pointer; font-weight: 700; color: var(--primary-color); display: flex; justify-content: space-between; }
@@ -190,47 +197,47 @@
         <p class="partners-title">شركاء نفتخر بخدمتهم</p>
         
         <div class="partners-logos" data-aos="fade-in">
-            <img src="images/par1.png" alt="Partner 1">
-            <img src="images/par2.png" alt="Partner 2">
-            <img src="images/par3.png" alt="Partner 3">
-            <img src="images/par4.png" alt="Partner 4">
+            <img src="images/par1.png" alt="كافيه طابور">
+            <img src="images/par2.png" alt="أسماك البحارة">
+            <img src="images/par3.png" alt="خلية عهد">
+            <img src="images/par4.png" alt="واو بشاميل">
         </div>
 
         <div class="partners-divider"></div>
 
         <div class="partners-grid-more" data-aos="fade-up">
-            <img src="images/par5.png" alt="Partner 5">
-            <img src="images/par6.png" alt="Partner 6">
-            <img src="images/par7.png" alt="Partner 7">
-            <img src="images/par8.png" alt="Partner 8">
-            <img src="images/par9.png" alt="Partner 9">
-            <img src="images/par10.png" alt="Partner 10">
-            <img src="images/par11.png" alt="Partner 11">
-            <img src="images/par12.png" alt="Partner 12">
-            <img src="images/par13.png" alt="Partner 13">
-            <img src="images/par14.png" alt="Partner 14">
-            <img src="images/par15.png" alt="Partner 15">
-            <img src="images/par16.png" alt="Partner 16">
-            <img src="images/par17.png" alt="Partner 17">
-            <img src="images/par18.png" alt="Partner 18">
-            <img src="images/par19.png" alt="Partner 19">
-            <img src="images/par20.png" alt="Partner 20">
-            <img src="images/par21.png" alt="Partner 21">
-            <img src="images/par22.png" alt="Partner 22">
-            <img src="images/par23.png" alt="Partner 23">
-            <img src="images/par24.png" alt="Partner 24">
-            <img src="images/par25.png" alt="Partner 25">
-            <img src="images/par26.png" alt="Partner 26">
-            <img src="images/par27.png" alt="Partner 27">
-            <img src="images/par28.png" alt="Partner 28">
-            <img src="images/par29.png" alt="Partner 29">
-            <img src="images/par30.png" alt="Partner 30">
-            <img src="images/par31.png" alt="Partner 31">
-            <img src="images/par32.png" alt="Partner 32">
-            <img src="images/par33.png" alt="Partner 33">
-            <img src="images/par34.png" alt="Partner 34">
-            <img src="images/par35.png" alt="Partner 35">
-            <img src="images/par36.png" alt="Partner 36">
+            <img src="images/par5.png" alt="سلطان الشواية">
+            <img src="images/par6.png" alt="برجر باسكت">
+            <img src="images/par7.png" alt="جليتش برجر">
+            <img src="images/par8.png" alt="ليزوان">
+            <img src="images/par9.png" alt="مضارب البادية">
+            <img src="images/par10.png" alt="مطعم سير">
+            <img src="images/par11.png" alt="كفتة 7">
+            <img src="images/par12.png" alt="تيكا تن">
+            <img src="images/par13.png" alt="توسد">
+            <img src="images/par14.png" alt="رشفة">
+            <img src="images/par15.png" alt="زيل">
+            <img src="images/par16.png" alt="الشاوي">
+            <img src="images/par17.png" alt="باراديم كافيه">
+            <img src="images/par18.png" alt="بهاري">
+            <img src="images/par19.png" alt="جاما">
+            <img src="images/par20.png" alt="جوار">
+            <img src="images/par21.png" alt="جوفانا">
+            <img src="images/par22.png" alt="سبكة">
+            <img src="images/par23.png" alt="رود باسكيت">
+            <img src="images/par24.png" alt="ساندوتش تايم">
+            <img src="images/par25.png" alt="سفرة فيروز">
+            <img src="images/par26.png" alt="عيش وملح">
+            <img src="images/par27.png" alt="لولي كافيه">
+            <img src="images/par28.png" alt="مارينز">
+            <img src="images/par29.png" alt="هافن">
+            <img src="images/par30.png" alt="هاك شاميك">
+            <img src="images/par31.png" alt="وينج">
+            <img src="images/par32.png" alt="فطاير البيت">
+            <img src="images/par33.png" alt="قلابة">
+            <img src="images/par34.png" alt="عالم السيريه">
+            <img src="images/par35.png" alt="شاورما مريم">
+            <img src="images/par36.png" alt="فول المزايا">
         </div>
     </section>
 
@@ -280,12 +287,10 @@
     </section>
 
     <section id="reviews" class="section-padding bg-white" data-aos="fade-up">
-        <div style="text-align:center;margin-bottom:50px"><h2 style="color:var(--primary-color);font-size:2.5rem">قالوا عن G.PACK</h2></div>
-        <div class="testimonials-grid">
-            <div class="testimonial-card"><div class="client-img"><i class="fas fa-user"></i></div><div class="stars">★★★★★</div><p class="client-text">"تعامل راقي جداً وسرعة في التنفيذ."</p><h4 class="client-name">مطعم أسماك البحارة</h4></div>
-            <div class="testimonial-card"><div class="client-img"><i class="fas fa-user"></i></div><div class="stars">★★★★★</div><p class="client-text">"أفضل مكان للطباعة والتغليف في ينبع."</p><h4 class="client-name">كافيه طابور</h4></div>
-            <div class="testimonial-card"><div class="client-img"><i class="fas fa-user"></i></div><div class="stars">★★★★★</div><p class="client-text">"فريق محترم ومتعاون لأبعد حد."</p><h4 class="client-name">واو بشاميل</h4></div>
+        <div style="text-align:center;margin-bottom:50px">
+            <h2 style="color:var(--primary-color);font-size:2.5rem">قالوا عن G.PACK</h2>
         </div>
+        <div class="testimonials-grid" id="testimonials-container"></div>
     </section>
 
     <section id="faq" class="section-padding bg-light" data-aos="fade-up">
@@ -338,7 +343,6 @@
                 document.body.classList.remove('loading');
             }
         }
-        
         window.addEventListener('load', hidePreloader);
         setTimeout(hidePreloader, 3000);
 
@@ -425,6 +429,49 @@
 
         setInterval(showNotification, 15000);
         setTimeout(showNotification, 3000);
+
+        /* --- سكربت التقييمات المتغيرة (ديناميك) مع اللوجوهات --- */
+        const allReviews = [
+            { name: "كافيه طابور", logo: "images/par1.png", text: "أفضل شريك نجاح لعلامتنا التجارية، دقة في المواعيد واحترافية عالية." },
+            { name: "أسماك البحارة", logo: "images/par2.png", text: "تعامل راقي جداً وسرعة في التنفيذ، الجودة فاقت التوقعات." },
+            { name: "خلية عهد", logo: "images/par3.png", text: "خامات ممتازة وطباعة دقيقة جداً، شكراً G.PACK على المجهود الرائع." },
+            { name: "واو بشاميل", logo: "images/par4.png", text: "فريق محترم ومتعاون لأبعد حد، والمنتجات ساعدت في إبراز هويتنا." },
+            { name: "سلطان الشواية", logo: "images/par5.png", text: "تجربة مميزة من بداية التصميم وحتى الاستلام، أنصح بالتعامل معهم." },
+            { name: "برجر باسكت", logo: "images/par6.png", text: "الاهتمام بالتفاصيل هو ما يميز G.PACK، سعداء جداً بالنتيجة النهائية." },
+            { name: "GLCH Burger", logo: "images/par7.png", text: "حلول تغليف مبتكرة ساعدتنا في تقديم منتجاتنا بشكل أفضل للعملاء." },
+            { name: "LEZWAN", logo: "images/par8.png", text: "سرعة استجابة ومرونة في الكميات، خدمة مثالية للمشاريع الطموحة." },
+            { name: "مضارب البادية", logo: "images/par9.png", text: "الجودة هي العنوان الأبرز لتعاملنا معكم، شكراً لكم." },
+            { name: "مطعم سير", logo: "images/par10.png", text: "طباعة نظيفة وألوان زاهية تطابق التصميم تماماً." },
+            { name: "كفتة 7", logo: "images/par11.png", text: "شريك موثوق يعتمد عليه في الأوقات الحرجة، شكراً لسرعة التوريد." },
+            { name: "Tekka Ten", logo: "images/par12.png", text: "خدمة عملاء راقية ومنتجات ترتقي لمستوى التوقعات." },
+            { name: "tosd", logo: "images/par13.png", text: "تصاميم عصرية وتنفيذ متقن، إضافة كبيرة للبراند." },
+            { name: "Rashfa", logo: "images/par14.png", text: "الجودة والسعر والسرعة.. معادلة صعبة حققتوها بامتياز." },
+            { name: "Zeal", logo: "images/par15.png", text: "تعامل احترافي ومنتجات بجودة عالمية." },
+            { name: "الشاوي", logo: "images/par16.png", text: "تغليف يحافظ على حرارة وجودة الطعام، شكراً لكم." },
+            { name: "Paradigm Cafe", logo: "images/par17.png", text: "من أفضل المطابع التي تعاملنا معها، التزام تام." },
+            { name: "مطعم بهاري", logo: "images/par18.png", text: "التغليف هو واجهة المطعم، وأنتم جعلتم واجهتنا مشرفة." },
+            { name: "Gamma", logo: "images/par19.png", text: "مرونة كبيرة في التعامل وتنفيذ طلبات خاصة بدقة." },
+            { name: "Jovana", logo: "images/par21.png", text: "سعداء بالشراكة معكم، وإلى مزيد من النجاحات." }
+        ];
+
+        function renderReviews() {
+            const container = document.getElementById('testimonials-container');
+            const shuffled = allReviews.sort(() => 0.5 - Math.random());
+            const selected = shuffled.slice(0, 3);
+
+            container.innerHTML = selected.map(review => `
+                <div class="testimonial-card">
+                    <div class="client-img">
+                        <img src="${review.logo}" alt="${review.name}">
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <p class="client-text">"${review.text}"</p>
+                    <h4 class="client-name">${review.name}</h4>
+                </div>
+            `).join('');
+        }
+        
+        window.addEventListener('load', renderReviews);
     </script>
 </body>
 </html>
